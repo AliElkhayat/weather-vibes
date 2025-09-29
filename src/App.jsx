@@ -19,7 +19,6 @@ const url = `${import.meta.env.VITE_WEATHER_BASE_URL}?q=${city}&appid=${import.m
     axios.get(url)
       .then((response) => {
         setData(response.data)
-        console.log(response.data)
       })
       .catch(() => {
         setError(" city not found ⚠️")
